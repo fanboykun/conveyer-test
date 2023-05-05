@@ -1,8 +1,11 @@
 <script>
-  import Logo from "$lib/images/logo.png";
-  // import {clickOutside} from './clickOutside.js';
+  import Logo from "$lib/images/logo.jpg";
+  import { page } from '$app/stores';
   import { fade, slide } from 'svelte/transition'
   let showDropdown = false;
+  let activeTextClass = 'text-fuchsia-700';
+  let inactiveTextClass = 'hover:text-purple-500/80';
+  let activeUndelineClass = 'absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-purple-500/0 via-purple-500/40 to-purple-500/0';
 
   function toggleDropdown() {
     showDropdown = !showDropdown;
@@ -10,24 +13,21 @@
 </script>
 
 <header
-  class="pointer-events-none sticky top-0 z-50 flex flex-col"
-  style="height:var(--header-height);margin-bottom:var(--header-mb)"
->
-  <div class="top-0 z-10 h-16 pt-6" style="position:var(--header-position)">
+  class="pointer-events-none sticky top-0 z-50 flex flex-col">
+  <div class="top-0 z-10 h-16 pt-6">
     <div
-      class="sm:px-8 top-[var(--header-top,theme(spacing.6))] w-full"
-      style="position:var(--header-inner-position)"
+      class="sm:px-8 w-full"
     >
       <div class="mx-auto max-w-7xl lg:px-8">
         <div class="relative px-4 sm:px-8 lg:px-12">
           <div class="mx-auto max-w-2xl lg:max-w-5xl">
-            <div class="relative flex gap-4">
+            <div class="relative flex gap-4 bg-white/25 rounded-full py-2">
               <div class="flex flex-1">
                 <div
                   class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
                 >
                   <a aria-label="Home" class="pointer-events-auto" href="/">
-                    <!-- <img
+                    <img
                     alt=""
                     fetchpriority="high"
                     decoding="async"
@@ -36,7 +36,7 @@
                     sizes="2.25rem"
                     src="{Logo}"
                     style="color: transparent;"
-                  /> -->
+                  />
                   </a>
                 </div>
               </div>
@@ -46,7 +46,7 @@
                   data-headlessui-state=""
                 >
                   <button
-                  on:click={toggleDropdown}
+                    on:click={toggleDropdown}
                     class="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
                     type="button"
                     aria-expanded="false"
@@ -126,6 +126,14 @@
                               class="block py-2"
                               data-headlessui-state="open"
                               on:click={(event) => showDropdown = false}
+                              href="/product">Product</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              class="block py-2"
+                              data-headlessui-state="open"
+                              on:click={(event) => showDropdown = false}
                               href="/about">About</a
                             >
                           </li>
@@ -141,17 +149,22 @@
                   >
                     <li>
                       <a
-                        class="relative block px-3 py-2 transition text-pink-500"
+                        class="relative block px-3 py-2 transition {$page.url.pathname == '/' ? activeTextClass : inactiveTextClass}"
                         href="/"
-                        >Home<span
-                          class="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-pink-500/0 via-pink-500/40 to-pink-500/0"
-                        /></a
+                        >Home
+                        <span class="{$page.url.pathname == '/' ? activeUndelineClass : ''}"/></a
                       >
                     </li>
                     <li>
                       <a
-                        class="relative block px-3 py-2 transition hover:text-teal-500"
-                        href="/about">About</a
+                        class="relative block px-3 py-2 transition {$page.url.pathname == '/product' ? activeTextClass : inactiveTextClass}"
+                        href="/product">Product<span class="{$page.url.pathname == '/product' ? activeUndelineClass : ''}"/></a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="relative block px-3 py-2 transition {$page.url.pathname == '/about' ? activeTextClass : inactiveTextClass}"
+                        href="/about">About<span class="{$page.url.pathname == '/about' ? activeUndelineClass : ''}"/></a
                       >
                     </li>
                   </ul>

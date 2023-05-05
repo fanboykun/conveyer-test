@@ -1,107 +1,39 @@
 <script>
-	import Parfum2 from "$lib/images/parfum-2.jpg";
+  import Contact from "../../lib/partials/Contact.svelte";
+import Team from "../../lib/partials/Team.svelte";
+
+  // import Cover from '$lib/images/bg2.jpg'
+    const cover = 'src/lib/images/bg3.jpg';
 </script>
 <svelte:head>
-  <title>About</title>
-  <meta name="description" content="About this app" />
+    <title>Aromez | About</title>
 </svelte:head>
+<section
+  class="overflow-hidden bg-[url({cover})] lg:bg-cover bg-cover bg-center bg-no-repeat mt-8">
+  <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
+    <div class="text-center ltr:sm:text-left rtl:sm:text-right">
+      <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
+        Our Company
+      </h2>
 
-<div class="sm:px-8 mt-16 sm:mt-16">
-  <div class="mx-auto max-w-7xl lg:px-8">
-    <div class="relative px-4 sm:px-8 lg:px-12">
-      <div class="mx-auto max-w-2xl lg:max-w-5xl">
-        <div
-          class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
-
-          <div class="lg:pl-20 ">
-            <div class="max-w-xs px-2.5 lg:max-w-none">
-              <img
-                alt=""
-                loading="lazy"
-                width="800"
-                height="800"
-                decoding="async"
-                data-nimg="1"
-                class="aspect-square rotate-3 rounded-2xl object-cover "
-                sizes="(min-width: 1024px) 32rem, 20rem"
-                src="{Parfum2}"
-                style="color: transparent;"
-              />
-            </div>
-          </div>
-
-          <div class="lg:order-first lg:row-span-2">
-            <h1
-              class="text-4xl font-bold tracking-tight text-zinc-800  sm:text-5xl"
-            >
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
-            </h1>
-            <div
-              class="mt-6 space-y-7 text-base text-zinc-600 "
-            >
-              <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
-              </p>
-              
-            </div>
-          </div>
-		  
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="sm:px-8 mt-16 sm:mt-16">
-  <div class="mx-auto max-w-7xl lg:px-8">
-    <div class="relative px-4 sm:px-8 lg:px-12">
-      <div class="mx-auto max-w-2xl lg:max-w-5xl">
-        <div
-          class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12"
+      
+      <div class="mt-4 sm:mt-8">
+        <p
+          class="inline-block max-w-lg text-white text-center md:mt-6 md:text-lg md:leading-relaxed"
         >
-          <div class="lg:order-first lg:row-span-2">
-            <div class="max-w-xs px-2.5 lg:max-w-none">
-              <img
-                alt=""
-                loading="lazy"
-                width="400"
-                height="400"
-                decoding="async"
-                data-nimg="1"
-                class="aspect-square -rotate-3 rounded-2xl object-cover "
-                sizes="(min-width: 1024px) 32rem, 20rem"
-                src="{Parfum2}"
-                style="color: transparent;"
-              />
-            </div>
-          </div>
-
-          <div class="lg:pl-10">
-            <h1
-              class="text-4xl font-bold tracking-tight text-zinc-800  sm:text-5xl"
-            >
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
-            </h1>
-            <div
-              class="mt-6 space-y-7 text-base text-zinc-600 "
-            >
-              <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
-              </p>
-              
-            </div>
-          </div>
-		  
-        </div>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore
+          officia corporis quasi doloribus iure architecto quae voluptatum beatae
+          excepturi dolores.
+        </p>
+        <!-- <a
+          href="#"
+          class="inline-block rounded-full bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+        >
+          Get Yours Today
+        </a> -->
       </div>
     </div>
   </div>
-</div>
+</section>
+<Team />
+<Contact />
