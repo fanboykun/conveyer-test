@@ -19,7 +19,7 @@
                   class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"
                 />
                 <h1
-                  href="/articles/crafting-a-design-system-for-a-multiplanetary-future"
+                  href="/about"
                 >
                   <span
                     class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
@@ -156,7 +156,7 @@
                     <dd
                       class="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
                       aria-label="2019 until Present">
-                      <a href="">Message us via WhatsApp</a>
+                      <a href="/about">Message us via WhatsApp</a>
                     </dd>
                   </dl>
                 </li>
@@ -188,7 +188,7 @@
                     <dd
                       class="ml-auto text-xs text-zinc-400 dark:text-zinc-500"
                       aria-label="2019 until Present">
-                      <a href="">Send Email to us</a>
+                      <a href="/about">Send Email to us</a>
                     </dd>
                   </dl>
                 </li>
