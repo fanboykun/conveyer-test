@@ -50,7 +50,7 @@
                   class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"
                 />
                 <h1
-                  href="/articles/crafting-a-design-system-for-a-multiplanetary-future"
+                  href="/about"
                 >
                   <span
                     class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
@@ -81,7 +81,7 @@
                   class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"
                 />
                 <h1
-                  href="/articles/crafting-a-design-system-for-a-multiplanetary-future"
+                  href="/about"
                 >
                   <span
                     class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
