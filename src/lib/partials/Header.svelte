@@ -24,7 +24,7 @@
             <div class="relative flex gap-4 bg-white/25 rounded-full py-2">
               <div class="flex flex-1">
                 <div
-                  class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
+                  class="h-10 w-10 ml-2 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur"
                 >
                   <a aria-label="Home" class="pointer-events-auto" href="/">
                     <img
@@ -32,7 +32,7 @@
                     fetchpriority="high"
                     decoding="async"
                     data-nimg="1"
-                    class="rounded-full bg-zinc-100 object-cover  h-9 w-9"
+                    class="rounded-full bg-zinc-100 object-cover h-9 w-9"
                     sizes="2.25rem"
                     src="{Logo}"
                     style="color: transparent;"

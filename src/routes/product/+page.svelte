@@ -1,5 +1,5 @@
 <script>
-	import Parfum2 from "$lib/images/parfum-2.jpg";
+	import Parfum2 from "$lib/images/parfum-3.jpg";
 </script>
 <svelte:head>
   <title>Aromez | Product</title>

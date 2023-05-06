@@ -26,11 +26,11 @@
     }
   ]
 </script>
-<div class="sm:px-8 mt-16 sm:mt-32 pb-32">
-  <div class="mx-auto max-w-7xl lg:px-8">
-    <div class="relative px-4 sm:px-8 lg:px-12">
-      <div class="mx-auto max-w-2xl lg:max-w-5xl">
-        <header class="max-w-2xl">
+<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 max-w-screen mt-4">
+  <div class="mx-auto">
+    <div class="relative">
+      <div class="mx-auto max-w-auto">
+        <header class="mx-auto">
           <h1
             class="text-4xl sm:text-5xl font-bold tracking-tight text-zinc-800"
           >
@@ -49,7 +49,7 @@
             class="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
           >
           {#each features as feature}  
-          <li class="group relative flex flex-col items-start">
+          <li class="group relative flex flex-col items-start px-2">
             <div
               class="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5"
             >
@@ -69,11 +69,11 @@
               class="mt-6 text-base font-semibold text-zinc-800"
             >
               <div
-                class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-white/25 transition group-hover:scale-100 group-hover:bg-white/50  sm:-inset-x-6 sm:rounded-2xl"
+                class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-white/25 transition group-hover:scale-100 group-hover:bg-white/50  sm:-inset-x-6 sm:rounded-2xl lg:rounded-2xl px-2"
               />
               <p
                 ><span
-                  class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
+                  class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl lg:rounded-2xl lg:px-4"
                 /><span class="relative z-10">{feature.title}</span></p
               >
             </h2>

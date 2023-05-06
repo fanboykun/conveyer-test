@@ -1,8 +1,8 @@
 <script>
-    import Parfum1 from '$lib/images/parfum-1.jpg'
-    import Parfum2 from '$lib/images/parfum-2.jpg'
+    import Parfum1 from '$lib/images/parfum-3.jpg'
+    import Parfum2 from '$lib/images/parfum-4.jpg'
 </script>
-<div class="mt-16 sm:mt-20">
+<div class="mt-16 sm:mt-20" id="gallery">
   <div class="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
     <div
       class="relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl sm:w-72 sm:rounded-2xl rotate-2"

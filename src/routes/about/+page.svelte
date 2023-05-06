@@ -1,16 +1,13 @@
 <script>
   import Contact from "../../lib/partials/Contact.svelte";
-import Team from "../../lib/partials/Team.svelte";
-
-  // import Cover from '$lib/images/bg2.jpg'
-    const cover = 'src/lib/images/bg3.jpg';
+  import Team from "../../lib/partials/Team.svelte";
 </script>
 <svelte:head>
     <title>Aromez | About</title>
 </svelte:head>
 <section
-  class="overflow-hidden bg-[url({cover})] lg:bg-cover bg-cover bg-center bg-no-repeat mt-8">
-  <div class="bg-black/50 p-8 md:p-12 lg:px-16 lg:py-24">
+  class="overflow-hidden bg-[url(src/lib/images/bg3.jpg)] lg:bg-cover bg-cover bg-center bg-no-repeat mt-8">
+  <div class="bg-lilac-900/60 p-8 md:p-12 lg:px-16 lg:py-24">
     <div class="text-center ltr:sm:text-left rtl:sm:text-right">
       <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
         Our Company

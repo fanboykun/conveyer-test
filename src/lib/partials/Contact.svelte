@@ -16,99 +16,66 @@
             <article class="group relative flex flex-col items-start">
               <h2 class="text-base font-semibold tracking-tight text-zinc-800">
                 <div
-                  class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"
+                  class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-white opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"
                 />
                 <h1
                   href="/about"
                 >
                   <span
-                    class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
+                    class="absolute -inset-x-4 -inset-y-6 z-10 sm:-inset-x-6 sm:rounded-2xl bg-white/80"
                   /><span class="relative z-10"
-                    >Crafting a design system for a multiplanetary future</span
+                    >Non cupidatat mollit adipisicing incididunt ut Lorem mollit sint magna.</span
                   >
                 </h1>
               </h2>
               <h1
-                class="relative text-fuchsia-600 font-semibold z-10 order-first mb-3 flex items-center text-sm pl-3.5"
+                class="relative text-lilac-600 font-semibold z-10 order-first mb-3 flex items-center text-sm pl-3.5"
               >
                 <span
                   class="absolute inset-y-0 left-0 flex items-center"
                   aria-hidden="true"
-                  ><span class="h-4 w-0.5 rounded-full bg-fuchsia-600" /></span
+                  ><span class="h-4 w-0.5 rounded-full bg-lilac-500" /></span
                 >Company History
               </h1>
               <p class="relative z-10 mt-2 text-sm text-zinc-600">
-                Most companies try to stay ahead of the curve when it comes to
-                visual design, but for Planetaria we needed to create a brand
-                that would still inspire us 100 years from now when humanity has
-                spread across our entire solar system.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
               </p>
             </article>
             <article class="group relative flex flex-col items-start">
               <h2 class="text-base font-semibold tracking-tight text-zinc-800">
                 <div
-                  class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"
+                  class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-white opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"
                 />
                 <h1
                   href="/about"
                 >
                   <span
-                    class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
+                    class="absolute -inset-x-4 -inset-y-6 z-10 sm:-inset-x-6 sm:rounded-2xl bg-white/80"
                   /><span class="relative z-10"
-                    >Crafting a design system for a multiplanetary future</span
+                    >Non cupidatat mollit adipisicing incididunt ut Lorem mollit sint magna.</span
                   >
                 </h1>
               </h2>
               <h1
-                class="relative text-fuchsia-600 font-semibold z-10 order-first mb-3 flex items-center text-sm pl-3.5"
+                class="relative text-lilac-600 font-semibold z-10 order-first mb-3 flex items-center text-sm pl-3.5"
               >
                 <span
                   class="absolute inset-y-0 left-0 flex items-center"
                   aria-hidden="true"
-                  ><span class="h-4 w-0.5 rounded-full bg-fuchsia-600" /></span
+                  ><span class="h-4 w-0.5 rounded-full bg-lilac-500" /></span
                 >Company History
               </h1>
               <p class="relative z-10 mt-2 text-sm text-zinc-600">
-                Most companies try to stay ahead of the curve when it comes to
-                visual design, but for Planetaria we needed to create a brand
-                that would still inspire us 100 years from now when humanity has
-                spread across our entire solar system.
-              </p>
-            </article>
-            <article class="group relative flex flex-col items-start">
-              <h2 class="text-base font-semibold tracking-tight text-zinc-800">
-                <div
-                  class="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl"
-                />
-                <h1
-                  href="/about"
-                >
-                  <span
-                    class="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"
-                  /><span class="relative z-10"
-                    >Crafting a design system for a multiplanetary future</span
-                  >
-                </h1>
-              </h2>
-              <h1
-                class="relative text-fuchsia-600 font-semibold z-10 order-first mb-3 flex items-center text-sm pl-3.5"
-              >
-                <span
-                  class="absolute inset-y-0 left-0 flex items-center"
-                  aria-hidden="true"
-                  ><span class="h-4 w-0.5 rounded-full bg-fuchsia-600" /></span
-                >Company History
-              </h1>
-              <p class="relative z-10 mt-2 text-sm text-zinc-600">
-                Most companies try to stay ahead of the curve when it comes to
-                visual design, but for Planetaria we needed to create a brand
-                that would still inspire us 100 years from now when humanity has
-                spread across our entire solar system.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam.
               </p>
             </article>
           </div>
-          <div class="space-y-10 lg:pl-16 xl:pl-24">
-            <div class="rounded-2xl border border-zinc-100 p-6">
+          <div class="lg:pl-16 xl:pl-24">
+            <div class="rounded-2xl bg-white/50 border border-zinc-100 p-6">
               <h2 class="flex text-sm font-semibold text-zinc-900">
                 <svg
                   viewBox="0 0 24 24"
@@ -226,7 +193,7 @@
                 </li>
               </ol>
               <a
-                class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-zinc-50 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 group mt-6 w-full"
+                class="inline-flex items-center gap-2 justify-center rounded-md py-2 px-3 text-sm outline-offset-2 transition active:transition-none bg-lilac-300 font-medium text-zinc-900 hover:bg-zinc-100 active:bg-zinc-100 active:text-zinc-900/60 group mt-6 w-full"
                 href="/#"
                 >Contact Us<svg
                   xmlns="http://www.w3.org/2000/svg"

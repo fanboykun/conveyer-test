@@ -5,7 +5,7 @@
   import Footer from '../lib/partials/Footer.svelte';
 </script>
 
-<div class="app">
+<div class="antialiased app">
 
 	<main>
 		<div>

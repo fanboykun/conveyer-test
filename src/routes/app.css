@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap'); */
+
+@font-face {
+    font-family: "alex";
+    src: url("../lib/fonts/AlexBrush-Regular.ttf");
+  }
