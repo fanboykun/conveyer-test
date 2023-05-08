@@ -95,11 +95,11 @@
                 ><span class="ml-3">Our Contact Info</span>
               </h2>
               <ol class="mt-6 space-y-4">
-                <li class="flex gap-4">
+                <!-- <li class="flex gap-4">
                   <div
                     class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5"
                   >
-                    <!-- <img
+                    <img
                       alt=""
                       loading="lazy"
                       width="32"
@@ -109,7 +109,7 @@
                       class="h-7 w-7"
                       src=""
                       style="color: transparent;"
-                    /> -->
+                    />
                   </div>
                   <dl class="flex flex-auto flex-wrap gap-x-2">
                     <dt class="sr-only">Contact</dt>
@@ -126,7 +126,7 @@
                       <a href="/about">Message us via WhatsApp</a>
                     </dd>
                   </dl>
-                </li>
+                </li> -->
                 <li class="flex gap-4">
                   <div
                     class="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5"

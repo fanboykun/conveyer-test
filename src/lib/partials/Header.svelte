@@ -1,5 +1,6 @@
 <script>
   import Logo from "$lib/images/logo.jpg";
+  import Logo2 from "$lib/images/logo3.jpg";
   import { page } from '$app/stores';
   import { fade, slide } from 'svelte/transition'
   let showDropdown = false;
@@ -32,9 +33,11 @@
                     fetchpriority="high"
                     decoding="async"
                     data-nimg="1"
+                    width="32"
+                    height="32"
                     class="rounded-full bg-zinc-100 object-cover h-9 w-9"
                     sizes="2.25rem"
-                    src="{Logo}"
+                    src="{Logo2}"
                     style="color: transparent;"
                   />
                   </a>

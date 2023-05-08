@@ -1,18 +1,15 @@
-# create-svelte
+# Instalation
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+Requirement:
+Download [`Node Js v18.13.0`] (https://nodejs.org/en/download).
+This project using npm versiion 8.19.3
 
-## Creating a project
+make sure you meet the requirement before installing the program.
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+Instalation
+-Clone this repo
+-Open your terminal, cd into the directory of the cloned repo
+-Type npm install && npm run dev
 
 ## Developing
 
