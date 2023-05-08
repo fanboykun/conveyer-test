@@ -1,9 +1,5 @@
 <script>
   import Contact from "../../lib/partials/Contact.svelte";
-  import { assets } from '$app/paths';
-  // bg-[url(src/lib/images/bg3.jpg)]
-
-  import Bg from '$lib/images/bg3.jpg'
 </script>
 <svelte:head>
     <title>Aromez | About</title>

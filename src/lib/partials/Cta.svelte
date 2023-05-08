@@ -1,6 +1,7 @@
 <script>
-    import Parfum3 from '$lib/images/parfum-3.jpg'
-    import Parfum4 from '$lib/images/parfum-4.jpg'
+    // import Making1 from '$lib/images/making-1.jpg'
+    // import Making2 from '$lib/images/making-2.jpg'
+    // import Making3 from '$lib/images/making-3.jpg'
   import Button from '../components/Button.svelte';
 </script>
 <section>
@@ -18,8 +19,8 @@
             </div>
         </div>
         <div class="grid grid-cols-2 gap-4 mt-8">
-            <img class="w-full rounded-lg" src="{Parfum3}" alt="office content 1">
-            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="{Parfum4}" alt="office content 2">
+            <img class="w-full rounded-lg" src="/images/making-1.jpg" alt="office content 1">
+            <img class="mt-4 w-full lg:mt-10 rounded-lg" src="/images/making-3.jpg" alt="office content 2">
         </div>
     </div>
 </section>

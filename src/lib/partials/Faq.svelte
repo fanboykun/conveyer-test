@@ -1,7 +1,7 @@
 <script>
 
 </script>
-<section class="">
+<section id="faq">
   <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
       <div class="text-base text-zinc-600 sm:text-lg">
           <h2 class="mb-4 text-4xl sm:text-5xl font-bold tracking-tight text-gray-900">Here's Our FAQ's</h2>

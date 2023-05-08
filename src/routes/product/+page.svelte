@@ -1,5 +1,6 @@
 <script>
-	import Parfum2 from "$lib/images/parfum-3.jpg";
+	// import Fragrance from "$lib/images/fragrance.jpg";
+	// import Candle from "$lib/images/candle.jpg";
 </script>
 <svelte:head>
   <title>Aromez | Product</title>
@@ -24,7 +25,7 @@
                 data-nimg="1"
                 class="aspect-square rotate-3 rounded-2xl object-cover "
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                src="{Parfum2}"
+                src="/images/fragrance.jpg"
                 style="color: transparent;"
               />
             </div>
@@ -70,7 +71,7 @@
                 data-nimg="1"
                 class="aspect-square -rotate-3 rounded-2xl object-cover "
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                src="{Parfum2}"
+                src="/images/candle.jpg"
                 style="color: transparent;"
               />
             </div>

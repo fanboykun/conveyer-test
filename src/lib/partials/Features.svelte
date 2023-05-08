@@ -26,7 +26,7 @@
     }
   ]
 </script>
-<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 max-w-screen mt-4">
+<div class="py-10 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 max-w-screen mt-8">
   <div class="mx-auto">
     <div class="relative">
       <div class="mx-auto max-w-auto">

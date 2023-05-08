@@ -1,5 +1,5 @@
 <script>
-  import People from '$lib/images/people.jpg'
+  import Person from '$lib/images/person.jpg'
   let persons = [
     {
       name: 'Leslie Alexander',
@@ -9,27 +9,27 @@
     {
       name: 'Leslie Alexander',
       role: 'Co-Founder / CEO',
-      image: People
+      image: Person
     },
     {
       name: 'Leslie Alexander',
       role: 'Co-Founder / CEO',
-      image: People
+      image: Person
     },
     {
       name: 'Leslie Alexander',
       role: 'Co-Founder / CEO',
-      image: People
+      image: Person
     },
     {
       name: 'Leslie Alexander',
       role: 'Co-Founder / CEO',
-      image: People
+      image: Person
     },
     {
       name: 'Leslie Alexander',
       role: 'Co-Founder / CEO',
-      image: People
+      image: Person
     },
   ]
 </script>
