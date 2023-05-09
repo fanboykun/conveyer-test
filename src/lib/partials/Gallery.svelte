@@ -1,68 +1,91 @@
 <script>
-    import Carousel from 'svelte-carousel';
-    import { browser } from '$app/environment';
-
-  let carousel; // for calling methods of the carousel instance
-  console.log(carousel);
-  let screenSize;
+  import { onMount } from 'svelte';
+  // import Carousel from 'svelte-carousel';
+  import { browser } from '$app/environment';
+  import Product1 from '$lib/images/product-1.webp'
+  import Product2 from '$lib/images/product-2.webp'
+  import Product3 from '$lib/images/product-3.webp'
+  import Product4 from '$lib/images/product-4.webp'
+  import Product5 from '$lib/images/product-5.webp'
+  import Product6 from '$lib/images/product-6.webp'
+  import Product7 from '$lib/images/product-7.webp'
+  import Product8 from '$lib/images/product-8.webp'
+  import Product9 from '$lib/images/product-9.webp'
+  import Product10 from '$lib/images/product-10.webp'
+  let Carousel; // for saving Carousel component class
+  onMount(async () => {
+      const module = await import('svelte-carousel');
+      Carousel = module.default;
+    });
   let products = [
     {
-      image: '/images/product-1.jpg',
+      image: Product1,
       class: 'rotate-2'
     },
     {
-      image: '/images/product-2.jpg',
+      image: Product2,
       class: '-rotate-2'
     },
     {
-      image: '/images/product-3.jpg',
+      image: Product3,
       class: 'rotate-2'
     },
     {
-      image: '/images/product-4.jpg',
+      image: Product4,
       class: '-rotate-2'
     },
     {
-      image: '/images/product-5.jpg',
+      image: Product5,
       class: 'rotate-2'
     },
     {
-      image: '/images/product-6.jpg',
+      image: Product6,
       class: '-rotate-2'
     },
     {
-      image: '/images/product-7.jpg',
+      image: Product7,
       class: 'rotate-2'
     },
     {
-      image: '/images/product-8.jpg',
+      image: Product8,
       class: '-rotate-2'
     },
     {
-      image: '/images/product-9.jpg',
+      image: Product9,
       class: 'rotate-2'
     },
     {
-      image: '/images/product-10.jpg',
+      image: Product10,
       class: '-rotate-2'
     }
   ]
+  let carousel; // for calling methods of the carousel instance
+  let screenSize;
+
+  function handleClick(){
+    carousel.goToNext();
+  }
 </script>
 <svelte:window bind:innerWidth={screenSize} />
 <div class="mt-16 sm:mt-20 overflow-x-hidden" id="gallery">
   {#if browser}
   <div>
-    <Carousel
+    <svelte:component this={Carousel}
       bind:this={carousel}
       particlesToShow={`${screenSize < 640 ? 1 : 3}`}
       particlesToScroll={1}
+      arrows={false}
+      dots={false}
+      swiping={false}
       let:showPrevPage
-      let:showNextPage>
-      {#each products as product, index }
-      <div class="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box">
+      let:showNextPage
+      let:loaded>
+      {#each products as product, index (product) }
+      <div class="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box justify-center">
         <div class="max-w-xs px-2.5 lg:max-w-none">
+          {#if loaded.includes(index)}
             <img
-              alt=""
+              alt="wait"
               loading="lazy"
               width="800"
               height="800"
@@ -73,20 +96,18 @@
               src="{product.image}"
               style="color: transparent;"
             />
+          {/if}
         </div>
       </div>
       {/each}
-      <button slot="prev" on:click={showPrevPage} class="p-2 rounded-full text-fuchsia-600 font-semibold shadow-lg hover:ring-2 ring-lilac-600">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M21 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953l7.108-4.062A1.125 1.125 0 0121 8.688v8.123zM11.25 16.811c0 .864-.933 1.405-1.683.977l-7.108-4.062a1.125 1.125 0 010-1.953L9.567 7.71a1.125 1.125 0 011.683.977v8.123z" />
-        </svg>      
-      </button>
-      <button slot="next" on:click={showNextPage} class="p-2 rounded-full text-fuchsia-600 font-semibold shadow-lg hover:ring-2 ring-lilac-600">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062A1.125 1.125 0 013 16.81V8.688zM12.75 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062a1.125 1.125 0 01-1.683-.977V8.688z" />
-        </svg>      
-      </button>
-    </Carousel>
+    </svelte:component>
+  </div>
+  <div class="absolute right-5">
+    <button on:click={ handleClick } class="p-2 rounded-full text-fuchsia-600 font-semibold shadow-lg hover:ring-2 ring-lilac-600">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062A1.125 1.125 0 013 16.81V8.688zM12.75 8.688c0-.864.933-1.405 1.683-.977l7.108 4.062a1.125 1.125 0 010 1.953l-7.108 4.062a1.125 1.125 0 01-1.683-.977V8.688z" />
+      </svg>      
+    </button>
   </div>  
   {/if}
 </div>

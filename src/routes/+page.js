@@ -1,13 +1,13 @@
-// import Product1 from '$lib/images/product-1.jpg'
-  // import Product2 from '$lib/images/product-2.jpg'
-  // import Product3 from '$lib/images/product-3.jpg'
-  // import Product4 from '$lib/images/product-4.jpg'
-  // import Product5 from '$lib/images/product-5.jpg'
-  // import Product6 from '$lib/images/product-6.jpg'
-  // import Product7 from '$lib/images/product-7.jpg'
-  // import Product8 from '$lib/images/product-8.jpg'
-  // import Product9 from '$lib/images/product-9.jpg'
-  // import Product10 from '$lib/images/product-10.jpg'
+// import Product1 from '$lib/images/product-1.webp'
+  // import Product2 from '$lib/images/product-2.webp'
+  // import Product3 from '$lib/images/product-3.webp'
+  // import Product4 from '$lib/images/product-4.webp'
+  // import Product5 from '$lib/images/product-5.webp'
+  // import Product6 from '$lib/images/product-6.webp'
+  // import Product7 from '$lib/images/product-7.webp'
+  // import Product8 from '$lib/images/product-8.webp'
+  // import Product9 from '$lib/images/product-9.webp'
+  // import Product10 from '$lib/images/product-10.webp'
   // let products = [
   //   {
   //     image: Product1,
@@ -50,6 +50,49 @@
   //     class: '-rotate-2'
   //   }
   // ]
+    // let products = [
+  //   {
+  //     image: '/images/product-1.webp',
+  //     class: 'rotate-2'
+  //   },
+  //   {
+  //     image: '/images/product-2.webp',
+  //     class: '-rotate-2'
+  //   },
+  //   {
+  //     image: '/images/product-3.webp',
+  //     class: 'rotate-2'
+  //   },
+  //   {
+  //     image: '/images/product-4.webp',
+  //     class: '-rotate-2'
+  //   },
+  //   {
+  //     image: '/images/product-5.webp',
+  //     class: 'rotate-2'
+  //   },
+  //   {
+  //     image: '/images/product-6.webp',
+  //     class: '-rotate-2'
+  //   },
+  //   {
+  //     image: '/images/product-7.webp',
+  //     class: 'rotate-2'
+  //   },
+  //   {
+  //     image: '/images/product-8.webp',
+  //     class: '-rotate-2'
+  //   },
+  //   {
+  //     image: '/images/product-9.webp',
+  //     class: 'rotate-2'
+  //   },
+  //   {
+  //     image: '/images/product-10.webp',
+  //     class: '-rotate-2'
+  //   }
+  // ]
 // since there's no dynamic data here, we can prerender
 // it so that it gets served as a static asset in production
 export const prerender = true;
+export const ssr = true;

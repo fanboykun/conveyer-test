@@ -37,10 +37,8 @@
             Our Commitment
           </h1>
           <p class="mt-6 text-base text-zinc-600 ">
-            I’ve worked on tons of little projects over the years but these are
-            the ones that I’m most proud of. Many of them are open-source, so if
-            you see something that piques your interest, check out the code and
-            contribute if you have ideas for how it can be improved.
+            Laboris magna ea duis Lorem. Deserunt aliqua pariatur est cupidatat et magna. Adipisicing sunt amet ut nisi minim est velit cillum aliqua.
+            Nisi eiusmod ipsum fugiat excepteur dolor dolore est. Nulla incididunt fugiat sit aute aliqua nisi eu ad veniam. Proident Lorem aliqua ad laborum. Proident ut et cupidatat esse et excepteur. Officia laboris nulla non officia pariatur sit ad anim eu exercitation Lorem qui ad.
           </p>
         </header>
         <div class="mt-16 sm:mt-20">

@@ -3,9 +3,6 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     extend: {
-      fontFamily: {
-        alex: ["alex", 'cursive'],
-      },
       colors: {
         "lilac": {
           50: "#F9F5F9",

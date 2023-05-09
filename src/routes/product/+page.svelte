@@ -25,7 +25,7 @@
                 data-nimg="1"
                 class="aspect-square rotate-3 rounded-2xl object-cover "
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                src="/images/fragrance.jpg"
+                src="/images/fragrance.webp"
                 style="color: transparent;"
               />
             </div>
@@ -71,7 +71,7 @@
                 data-nimg="1"
                 class="aspect-square -rotate-3 rounded-2xl object-cover "
                 sizes="(min-width: 1024px) 32rem, 20rem"
-                src="/images/candle.jpg"
+                src="/images/candle.webp"
                 style="color: transparent;"
               />
             </div>
